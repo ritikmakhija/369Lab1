@@ -39,7 +39,7 @@ module ProgramCounter(Address, PCResult, Reset, Clk);
     
     
    if (Reset==1) begin
-   PCResult <= 00000000;
+   PCResult <= 0;
    end
    
    if (Reset==0) begin
@@ -49,4 +49,6 @@ module ProgramCounter(Address, PCResult, Reset, Clk);
    end
 
 endmodule
+
+
 
